@@ -2,6 +2,7 @@
 
 import clsx from 'clsx';
 import Link from 'next/link';
+import SocialMedia from './social-media';
 
 interface MobileMenuProps {
   mobileIsOpen: boolean;
@@ -15,7 +16,7 @@ export default function MobileMenu({
   return (
     <div
       className={clsx(
-        'w-full h-full fixed top-0 left-0 z-[40] bg-black transition-all duration-700 ease-in-out',
+        'w-full h-full fixed top-0 left-0 z-[40] bg-black transition-all duration-700 ease-in-out flex flex-col justify-between',
         'pt-[132px] px-[24px] pb-[40px] md:px-[48px] md:pt-[172px] opacity-100',
         mobileIsOpen
           ? 'opacity-100 visible pointer-events-auto translate-y-[0px]'
@@ -78,6 +79,8 @@ export default function MobileMenu({
           </Link>
         </li>
       </ul>
+
+      <SocialMedia />
     </div>
   );
 }
