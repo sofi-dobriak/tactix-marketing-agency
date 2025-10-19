@@ -36,7 +36,10 @@ const clashDisplay = localFont({
 });
 
 export const metadata = {
-  title: 'Tactix',
+  title: {
+    default: 'Tactix',
+    template: 'Tactix | %s',
+  },
   description: 'Promotional landing page for a marketing agency',
   icons: {
     icon: '/favicon.svg',
