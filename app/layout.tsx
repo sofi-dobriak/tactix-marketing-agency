@@ -1,3 +1,4 @@
+import Header from './comeponents/header';
 import './globals.css';
 import localFont from 'next/font/local';
 
@@ -54,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${figtree.variable} ${clashDisplay.variable}`}>
+        <Header />
         {children}
       </body>
     </html>
