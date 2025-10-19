@@ -1,6 +1,4 @@
-import Header from './components/header';
 import LayoutWrapper from './components/layout-wrapper';
-import MobileMenu from './components/mobile-menu';
 import './globals.css';
 import localFont from 'next/font/local';
 
