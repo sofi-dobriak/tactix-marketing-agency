@@ -1,4 +1,4 @@
-import Header from './comeponents/header';
+import Header from './components/header';
 import './globals.css';
 import localFont from 'next/font/local';
 
@@ -43,7 +43,7 @@ export const metadata = {
   },
   description: 'Promotional landing page for a marketing agency',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/images/favicon.svg',
   },
 };
 
