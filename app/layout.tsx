@@ -1,4 +1,6 @@
 import Header from './components/header';
+import LayoutWrapper from './components/layout-wrapper';
+import MobileMenu from './components/mobile-menu';
 import './globals.css';
 import localFont from 'next/font/local';
 
@@ -47,16 +49,15 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+interface RootLayoutProps {
+  readonly children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${figtree.variable} ${clashDisplay.variable}`}>
-        <Header />
-        {children}
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );
