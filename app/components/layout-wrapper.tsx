@@ -1,9 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import Header from './header';
-import MobileMenu from './mobile-menu';
-import Container from './container';
+import Header from './header/header';
+import MobileMenu from './header/mobile-menu';
 
 export interface LayoutWrapperProps {
   children: React.ReactNode;
@@ -17,9 +16,7 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
     <>
       <Header handleOpenMobile={handleOpenMobile} mobileIsOpen={mobileIsOpen} />
 
-      <main>
-        <Container>{children}</Container>
-      </main>
+      <main>{children}</main>
 
       <MobileMenu
         mobileIsOpen={mobileIsOpen}

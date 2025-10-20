@@ -8,5 +8,8 @@
 body {
   font-family: var(--font-figtree), sans-serif;
   background-color: #000000;
-  height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-clashDisplay), sans-serif;
 }
